@@ -27,16 +27,33 @@
   display: none;
   overflow: hidden;
 }
-#menu::before{
-  content: '';
+#menu1{
   position: absolute;
-  top: 0;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  z-index: 4;
+  /*background:#000;*/
+  transform: rotate(180deg);
+  display: none;
+  overflow: hidden;
+}
+
+#menusvg{
+  position: absolute;
+  /*transform: translate(-50%,-50%);*/
+  top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  background: #000;
-  display: none;
-
+  /*float: left;*/
+  /*cursor: pointer;*/
+  /*z-index: 4;*/
+  /*background:#f00;*/
 }
 
 .shadow{
@@ -120,6 +137,121 @@
               }
 
 
+              .cls-1q{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:1px;}
+            .cls-1q{stroke-dasharray: 500; stroke-dashoffset:0; animation:menuclosed 3s linear forwards;animation-iteration-count: 1;}
+          .cls-1qq{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:1px;}
+            .cls-1qq{stroke-dasharray: 500; stroke-dashoffset:-500; animation:menuclose 2s linear forwards;animation-delay:1s;animation-iteration-count: 1;}
+
+               @-webkit-keyframes menuclose{
+                      0%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+            @-moz-keyframes menuclose{
+                      0%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+
+            @keyframes menuclose{
+                      0%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+
+            @-webkit-keyframes menuclosed{
+                      0%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+
+            @-moz-keyframes menuclosed{
+                      0%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+
+            @keyframes menuclosed{
+                      0%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      50%{
+                          stroke-dashoffset:-500;
+                          
+                      }
+                      100%{
+                          stroke-dashoffset:0;
+                          
+                      }
+                      }
+
+
+#Layer_1fu{
+          background:transparent;
+          }
+
+          .st0y1{fill:none;stroke:#fff;stroke-width:.3px;stroke-miterlimit:10;}
+
+          .st0y2{fill:none;stroke:#fff;stroke-width:.3px;stroke-miterlimit:10;}
+
+@media screen and (max-width: 1000px) {
+          .st0y1{stroke:#000;}
+
+          .st0y2{stroke:#000;}
+  }        
+
+
 #myVideo {
   position: absolute;
   left: 0;
@@ -166,25 +298,41 @@
 
  -->
 
-<div class="topbar wow fadeIn" data-wow-delay="1s"></div>
+<div class="topbar wow fadeIn" data-wow-delay="1s">
+<!--   <div class="nameholder">
+    <div class="logo"></div>
+    <div class="name">Codec</div>
+
+  </div>
+  <div class="productholder">
+    <div class="productsbtn"></div>
+    <div class="contactbtn"></div>
+
+  </div>   -->
+</div>
 <div class="middlebar">
 <div id="menu" data-wow-delay="1s">
 	<span class="span1"></span>
 	<span class="span2"></span>
 	<span class="span3"></span>
 </div>
+<div id ="menu1">
+    <svg id="menusvg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.65 29.76">
+      <defs>
+        <style>
+          
+        </style>
+      </defs>
+      <line class="cls-1q" x1="0.32" y1="29.38" x2="34.32" y2="0.38"/>
+      <line class="cls-1qq" x1="0.32" y1="0.38" x2="34.32" y2="29.38"/>
+    </svg>
+  </div>
 <div class="scroll">
 <div id ="nextservicescroll">
 				<svg version="1.1" id="Layer_1fu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 				viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
 				<style type="text/css">
-					#Layer_1fu{
-	 				background:transparent;
-					}
-
-					.st0y1{fill:none;stroke:#fff;stroke-width:.5px;stroke-miterlimit:10;}
-
-					.st0y2{fill:none;stroke:#fff;stroke-width:.5px;stroke-miterlimit:10;}
+					
 				</style>
 					<line class="st0y1" x1="0.5" y1="0.5" x2="8.5" y2="4.5"/>
 					<line class="st0y2" x1="8.5" y1="4.5" x2="0.5" y2="9.5"/>				
@@ -194,19 +342,41 @@
 </div>
 </div>
 
-<!-- <div class="midabt"></div> -->
+<div class="midabt">
+  <div class="productname">
+    <div class="productname1">
+      <div class="connex"><a>theconnex.com</a></div>
+    </div>
+    <div class="productname2">
+      <div class="teenez"><a>djteenez.com</a></div>
+      
+    </div>
+    <div class="productname3">
+      <div class="init"><a>init.com</a></div>
+      
+    </div>
+    <div class="productname4">
+      <div class="code"><a href="">codec.com</a></div>
+      
+    </div>
+
+  </div>
+</div>
+
 
 <section class="scrolled">
 	<div class="squad"></div>
 
 
-		  <!-- <div class="win"> -->
  
       </div>
 </section>
 
 
 <section id="about">
+
+      <div class="win"></div>
+
 
 	<div class="abtxt wow bounceInRight" data-wow-delay="0.5s">
 		<h1 class="h1class">codec</h1>
@@ -266,7 +436,9 @@
         </div>    
   </div>
 
-</div>
+
+
+
 
 
 </section>
@@ -424,34 +596,48 @@ $(document).ready(function(){
 		 	powerChanger.innerHTML = text[counterr];
 		 	counterr ++; 
 
+          if (counterr == 0) {
+        optiChanger.style.background = "linear-gradient(0deg, #000000,#262626, #fff, #ffffff)";
+
+        $('head').append('<style>#optimization{border: 1px groove #000;}#powered{color: #424242;} #menu span{background-color:#000}.cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242}#about{background: linear-gradient(left,transparent, #fff, #fff,#fff,#fff,#fff,#fff,#fff);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #000;}.abtxt h1{color: #000;} .codec{color:#000;}.win{background:#fff}</style>');
+
+        if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
+        }
+
+
+      }
+      else if(counterr == 1){
+        optiChanger.style.background = "linear-gradient(90deg, #fff, #ffffff,#262626, #000000)";
+        $('head').append('<style>#optimization{border: 1px groove #fff;}#powered{color: #fff;}   #menu span{background-color:#fff}.menu{box-shadow: 2px 2px 2px #fff;} .cls-1q,.cls-1qq{stroke:#fff}.copyright{color:#fff}#about{background: linear-gradient(left,transparent, #000, #000,#000,#000,#000,#000,#000);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #fff;}.abtxt h1{color: #fff;}.codec{color:#fff;}.win{background:#000}</style>');
+
+          if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#fff;}</style>');
+        }
+
+      }
+      else{
+        optiChanger.style.background = "linear-gradient(90deg, #000000,#262626, #fff, #ffffff)";
+          $('head').append('<style>#optimization{border: 1px groove #000;}#powered{color: #424242;}#menu span{background-color:#000}.menu{box-shadow: 4px 4px 4px #000;} .cls-1q,.cls-1qq{stroke:#000}.copyright{color:#424242}#about{background: linear-gradient(left,transparent, #fff, #fff,#fff,#fff,#fff,#fff,#fff);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #000;}.abtxt h1{color: #000;}.codec{color:#000;}.win{background:#fff}</style>');
+
+                     if (innerWidth < 1000) {
+           $('head').append('<style>.st0y1,.st0y2{stroke:#000;}</style>');
+        }
+        }
+
 		 	console.log(counterr); 
 
  })
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		$("#optimization").click(function(){
+		
 
-		 	if (counterr == 0) {
-        optiChanger.style.background = "linear-gradient(0deg, #000000,#262626, #fff, #ffffff)";
-
-  			$('head').append('<style>#powered{color: #424242;} #menu span{background-color:#000}.copyright{color:#424242}#about{background: linear-gradient(left,transparent, #fff, #fff,#fff,#fff,#fff,#fff,#fff);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #000;}.abtxt h1{color: #000;} .codec{color:#000;}.win{background:#fff}</style>');
-
-
-      }
-      else if(counterr == 1){
-        optiChanger.style.background = "linear-gradient(90deg, #fff, #ffffff,#262626, #000000)";
-  			$('head').append('<style>#powered{color: #fff;}   #menu span{background-color:#fff}.menu{box-shadow: 2px 2px 2px #fff;} .copyright{color:#fff}#about{background: linear-gradient(left,transparent, #000, #000,#000,#000,#000,#000,#000);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #fff;}.abtxt h1{color: #fff;}.codec{color:#fff;}.win{background:#000}</style>');
-
-      }
-      else{
-      	optiChanger.style.background = "linear-gradient(90deg, #000000,#262626, #fff, #ffffff)";
-  				$('head').append('<style>#powered{color: #424242;}#menu span{background-color:#000}.menu{box-shadow: 4px 4px 4px #000;} .copyright{color:#424242}#about{background: linear-gradient(left,transparent, #fff, #fff,#fff,#fff,#fff,#fff,#fff);box-shadow: -12px -12px 12px #cccccc;}.abtxt p{color: #000;}.abtxt h1{color: #000;}.codec{color:#000;}.win{background:#fff}</style>');
-      }
+	
 
 
 
- })
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 optiChanger.addEventListener("mouseenter", function( event ) {
@@ -758,33 +944,45 @@ const parallax = document.querySelector(".scrolled");
                                 scrollLeft: ${parallax.scrollLeft} `;
 
                                 // var toy = ${parallax.scrollTop};
-                      let toy = parallax.scrollTop * -0.6;
-                      let toys = parallax.scrollTop * -1;
+                      let toy = parallax.scrollTop * -0.9;
+                      let toys = parallax.scrollTop * -1.1;
+                      let toyd = parallax.scrollTop * -1.7;
+
 
 
         // let toto = parallax.scrollLeft + 10;
 
 if (innerWidth < 600) {
 			$(".categories").animate({left:toys}, {duration: -100});
+      $(".productname").animate({left:toys}, {duration: -100});
+
+      }else if(innerWidth < 850){
+      $(".categories").animate({left:toyd}, {duration: -100});
+      $(".productname").animate({left:toyd}, {duration: -100});
       }else{
       $(".categories").animate({left:toy}, {duration: -100});
+      $(".productname").animate({left:toy}, {duration: -100});
+
       }
 
-			    if (parallax.scrollTop > 150) {
+			    if (parallax.scrollTop > 100) {
 					
 			   		$(".codectxt").fadeOut();
             $(".image").fadeOut();
             $(".description").fadeOut();
 
-          if (innerWidth > 600) {  
+          // if (innerWidth > 600) {  
             $(".categories").animate({marginTop:"5%"}, {duration: -100});
-              }else{
-            $(".categories").animate({marginTop:"10%"}, {duration: -100});     
-              }
+            //   }else{
+            // $(".categories").animate({marginTop:"10%"}, {duration: -100});     
+            //   }
+
+            $(".midabt").fadeIn();
+
 
 
 		} else{
-            
+            $(".midabt").fadeOut();
             $(".codectxt").fadeIn();
             $(".image").fadeIn();
             $(".description").fadeIn(); 
@@ -793,13 +991,29 @@ if (innerWidth < 600) {
     }  
 
 
+if (innerWidth > 600) {
+if (parallax.scrollTop > 1100) {
+            $(".productname").fadeOut();
+          $(".win").animate({left:"0%"}, {duration: -100});
 
-// if (parallax.scrollTop > 1400) {
-//           $(".win").animate({left:"0%"}, {duration: 100});
+    } 
+    else{     
+            $(".productname").fadeIn();
+            $(".win").animate({left:"100%"}, {duration: 0});  
 
-//     } else{     
-//             $(".win").animate({left:"100%"}, {duration: 0});  
-//     }  
+    }  
+    }else{
+      if (parallax.scrollTop > 1200) {
+            $(".productname").fadeOut();
+          $(".win").animate({top:"0%"}, {duration: -100});
+
+    } 
+    else{     
+            $(".productname").fadeIn();
+            $(".win").animate({top:"100%"}, {duration: 0}); 
+
+    }  
+    }
 
         }, { passive: true });
 
@@ -848,13 +1062,58 @@ if (innerWidth > 1000) {
 
   $("#about").animate({top:("49%")}, {duration: 1500});
 
+
 }
 	$(".aboutholder").delay(1000).fadeIn({duration: 200});
 	$(".abtxt").delay(500).fadeIn();
+  $("#menu").fadeOut();
+  $("#menu1").fadeIn();
 	$(".scroll").delay(1500).fadeIn({duration: 1500});
 
 })
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$("#menu").click(function(){
+
+  if (innerWidth < 1000) {
+
+   $(".topset").fadeOut();
+ }
+})
+
+$("#menu1").click(function(){
+
+  if (innerWidth < 1000) {
+
+   $(".topset").fadeIn();
+ }
+})
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$("#menu1").click(function(){
+
+if (innerWidth > 1000) {
+  // $("#about").removeClass("bounceInRight");
+  // $("#about").addClass("bounceInUp");
+
+  $("#about").animate({left:("100%")}, {duration: 1500});
+
+}else{
+
+  $("#about").animate({top:("100%")}, {duration: 1500});
+
+}
+  $(".scroll").fadeOut();
+  $(".abtxt").fadeOut();
+  $("#menu1").delay(500).fadeOut({duration: 500});
+  $("#menu").delay(1500).fadeIn();
+
+})
+
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(".scroll").click(function(){
 if (innerWidth > 1000) {
 	$("#about").animate({left:("0%")}, {duration: 1500});
@@ -874,7 +1133,7 @@ if (counterr == 0) {
 }
     
 }
-	$("#menu").fadeOut();
+	$("#menu1").fadeOut();
 
 	$(".abtxt").fadeOut();
   // $(".image").animate({left:("25%")}, {duration: 1500});
