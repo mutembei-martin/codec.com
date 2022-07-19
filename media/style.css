@@ -83,11 +83,7 @@ transform: translate(-50%, -50%);
   display: none;
 }
 
-#logo{
-  position: absolute;
-  margin-top: -5%;
 
-}
 
 #logo1{
   position: absolute;
@@ -97,29 +93,245 @@ transform: translate(-50%, -50%);
 
 .topbar{
   position: absolute;
-  top: 40px;
-  left: 0%;
-  width: 100%;
+  top: 20px;
+  left: 5%;
+  width: 90%;
   height: 60px;
   z-index: 4;
-/*  border-bottom: 2px solid #000;
-  border-top: 2px solid #000;*/
+  border-bottom: 2px solid #000;
+  /*border-top: 2px solid #000;*/
     display: none;
+}
+
+.nameholder{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 60px;
+  /*background:#0f0;*/
+  /*border-right: 2px solid #000;*/
+
+}
+
+.logo{
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 60px;
+  height: 60px;
+  /*z-index: 4;*/
+  /*background:#0f0;*/
+  float: left;
+  border: 2px solid #000;
+    /*display: none;*/
+}
+.name{
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 240px;
+  height: 60px;
+  padding-left: 10px;
+  font-size: 2em;
+  font-weight: bold;
+font-family: 'nosifer';
+  line-height: 60px;
+  /*z-index: 4;*/
+  /*background:#f00;*/
+  float: left;
+  /*border-top: 2px solid #000;*/
+    /*display: none;*/
+}
+
+.productholder{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  height: 60px;
+  float: right;
+  /*background:#0f0;*/
+  /*border-left: 2px solid #000;*/
+
+}
+
+.productsbtn{
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 150px;
+  height: 60px;
+  /*z-index: 4;*/
+  /*background:#0f0;*/
+  float: left;
+  /*border-top: 2px solid #000;*/
+    /*display: none;*/
+}
+
+
+.contactbtn{
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 150px;
+  height: 60px;
+  /*z-index: 4;*/
+  /*background:#f00;*/
+  float: left;
+  /*border-top: 2px solid #000;*/
+    /*display: none;*/
+}
+.contactbtn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  /*background:#000;*/
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+
+}
+
+.contactbtn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  /*background:#f00;*/
+  border-bottom: 2px solid #f00;
+  border-right: 2px solid #f00;
 }
 
 .midabt{
   position: absolute;
   /*transform: translate(-50%,-50%);*/
-  top: 65%;
+  top: 80%;
   left: 0%;
   width: 100%;
   height: 100px;
   z-index: 4;
-  border-bottom: 2px solid #0ff;
-  border-top: 2px solid #0ff;
+  /*border-bottom: 2px solid #0ff;*/
+  /*border-top: 2px solid #0ff;*/
+  overflow: hidden;
+  display: none;
 }
 
+.productname{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200%;
+  height: 100px;
+  /*background:#0f0;*/
+}
 
+.productname1,.productname2,.productname3,.productname4{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+.productname1{
+
+  margin-top: 0%;
+  margin-left: 3%;
+  /*background:#00f;*/
+}
+
+.productname2{
+  margin-top: 0%;
+  margin-left: 2%;
+  /*background:#0f0;*/
+
+}
+
+.productname3{
+  margin-top: 0%;
+  margin-left: 2%;
+  /*background:#f00;*/
+
+}
+
+.productname4{
+  margin-top: 0%;
+  margin-left: 2%;
+  /*background:#0f0;*/
+
+}
+
+.connex{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  height: 60px;
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  /*z-index: 3;*/
+  /*background: #000;*/
+}
+
+.teenez{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 60px;
+    font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  /*z-index: 3;*/
+  /*background: #000;*/
+}
+
+.init{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  height: 60px;
+    font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  /*z-index: 3;*/
+  /*background: #000;*/
+}
+
+.code{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  height: 60px;
+    font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  /*z-index: 3;*/
+  /*background: #000;*/
+}
 
 .middlebar{
   position: absolute;
@@ -185,7 +397,7 @@ transform: translate(-50%, -50%);
   /*margin-top: 10px;*/
   border-radius: 50%;
   cursor: pointer;
-  border: 2px groove #000;
+  border: 1px groove #000;
   transition: 1s;
 }
 #powered{
@@ -307,7 +519,7 @@ font-family:nosifer;
 .codec{
   position: relative;
   /*top: calc(20% + 75px);*/
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left:0%;
   width: 100%;
   /*margin: 0;*/
@@ -462,7 +674,7 @@ font-family:nosifer;
   /*transform: translate(-50%;-50%);*/
   top: 0%;
   left: 0%;
-  width: 80%;
+  width: 100%;
   height: 2000px;
   /*z-index: 3;*/
   overflow:hidden;
@@ -481,7 +693,7 @@ font-family:nosifer;
   /*transform: transform(-50%, -50%);*/
   margin-top: -5%;
   margin-left: 0%;
-  width: 450%;
+  width: 500%;
   /*margin: 0;*/
   /*height: calc(80% - 75px);*/
   height: 100%;
@@ -554,16 +766,16 @@ font-family:nosifer;
 .win{
 
   /*background-position: fixed;*/
-  position: relative;
+  position: absolute;
   /*transform: translate(-50%;-50%);*/
-  margin-top:0%;
-  margin-left: 0%;
+  top:0%;
+  left: 100%;
   /*left:25%;*/
   width: 100%;
   height: 100%;
-  /*z-index: 3;*/
+  z-index: 3;
   /*overflow-y: scroll;*/
-  background: #0f0;
+  background: #fff;
   /*opacity: .5;*/
 
 }
@@ -591,6 +803,13 @@ font-family:nosifer;
   background: linear-gradient(top,transparent, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff);*/
 }
 
+ .win{
+
+  top:100%;
+  left: 0%;
+
+}
+
 .abtxt{
   left: 50%;
   top: 20%;
@@ -616,12 +835,26 @@ font-family:nosifer;
 
 }
 
+@media screen and (max-width: 850px) {
+  .midabt{
+  top: 55%;
+}
+}
 
+
+@media screen and (max-width: 800px) {
+
+.productname{
+  width: 300%;
+}
+}
 
 @media screen and (max-width: 750px) {
-  .topset{
-  top: 20px;
-}
+
+/*.topbar{
+  top: 0px;
+}*/
+
 
 #menu{
   width: 42px;
@@ -633,12 +866,19 @@ font-family:nosifer;
 #menu span:nth-child(2){margin-top:9px;}
 #menu span:nth-child(3){margin-top:9px;}
 
+
+
+.midabt{
+  top: 48%;
+}
+
+
 .brand{
   width: 170px;
 }
 
 #optimization{
-  /*top:5px;*/
+  border: 1px groove #000;
   width: 35px;
   height: 35px;
 }
@@ -719,6 +959,57 @@ font-family:nosifer;
   height: 250px;
 
 }
+
+.productname1,.productname2,.productname3,.productname4{
+    width: 400px;
+    float: left;
+
+}
+
+.topbar{
+  /*top: 0px;*/
+  height: 40px;
+}
+
+  .topset{
+  top: 20px;
+}
+.nameholder{
+  width: 150px;
+  height: 40px;
+
+}
+
+.productholder{
+  width: 180px;
+  height: 40px;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+.name{
+  width: 110px;
+  height: 40px;
+}
+.productsbtn{
+  width: 90px;
+  height: 40px;
+}
+.contactbtn{
+  width: 90px;
+  height: 40px;
+}
+.midabt{
+  top: 75%;
+}
+
+.categories{
+  width: 700%;
+}
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -738,9 +1029,29 @@ font-family:nosifer;
 /*.categories{
   margin-top: -50%;
 }*/
+
+.productname1,.productname2,.productname3,.productname4{
+    width: 400px;
+    float: left;
+
+}
+
+.productname1{
+  margin-left: -1%;
+    width: 400px;
+    float: left;
+
+}
+
 .cat,.cat1,.cat2,.cat3,.cat4,.cat5{
   width:400px;
   height: 200px;
 
 }
+
+.productname{
+  width: 470%;
+}
+
+
 }
